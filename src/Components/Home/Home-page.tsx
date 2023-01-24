@@ -1,3 +1,4 @@
+import { ROUTES } from "../../Constants/routeConstants";
 const Home = () => {
    return (
       <div className="">
@@ -11,13 +12,13 @@ const Home = () => {
                </div>
                <div className="carousel-inner">
                   <div className="carousel-item active">
-                     <img src="./Images/p1.jpg" className="d-block w-100   " alt="pic-1" img-fluid />
+                     <img src="./Images/p3.png" className="d-block w-100   " alt="pic-1" img-fluid />
                   </div>
                   <div className="carousel-item">
                      <img src="./Images/p2.jpg" className="d-block w-100 " alt="pic-2" img-fluid />
                   </div>
                   <div className="carousel-item">
-                     <img src="/Images/p3.png" className="d-block w-100 " alt="pic-3" img-fluid />
+                     <img src="/Images/p1.jpg" className="d-block w-100 " alt="pic-3" img-fluid />
                   </div>
                </div>
                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -30,18 +31,18 @@ const Home = () => {
                </button>
             </div>
          </header>
-       
+
          <section className=" container card-section mt-5">
             <h2>Card Menu</h2>
             <div className="card w-100 ">
                <div className="card-body p-5">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" className="btn btn-primary">Go to Converter</a>
+                  <a href={ROUTES.Converter} className="btn btn-primary">Go to Converter</a>
                </div>
             </div>
-        </section>
-     </div>
+         </section>
+      </div>
    )
 }
 export default Home;
