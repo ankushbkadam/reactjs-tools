@@ -32,7 +32,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+/* Navbar Section */
+.navbar-dark .navbar-nav .nav-link.set{
+  color: #fff;
+ }
 /* Header-slider */
 
 .carousel-item img {

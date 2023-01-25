@@ -14,12 +14,11 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href={ROUTES.HOME} >Home</a>
+                                <a className="nav-link set" aria-current="page" href={ROUTES.HOME} >Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href={ROUTES.ABOUT}>About</a>
+                                <a className="nav-link set" href={ROUTES.ABOUT}>About</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
