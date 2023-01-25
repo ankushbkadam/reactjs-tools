@@ -1,7 +1,7 @@
 
 const Converter = () => {
     return (
-        <div className=" container-fluid gradient_bg container-box ">
+        <div className="container-fluid gradient_bg container-box ">
             <h2 className="gradient-text pt-5">Let's Convert Color</h2>
             <div className="container converter-box ">
                 <div className="wrapper ">

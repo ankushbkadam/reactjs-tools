@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './Style.css';
-import Home from './Components/Home/Home-page';
+import Home from './Components/Home/Home';
 import { Route, Routes } from 'react-router';
 import Navbar from './Components/Navbar/Navbar';
 import { ROUTES } from './Constants/routeConstants';
@@ -14,9 +13,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.ABOUT} element={<About/>}/>
-        <Route path={ROUTES.Converter} element={<Converter/>}/>
+        <Route path={ROUTES.HOME} element={<Home />}/>
+        <Route path={ROUTES.ABOUT} element={<About />}/>
+        <Route path={ROUTES.CONVERTER} element={<Converter />}/>
       </Routes>
     </div>
   );
