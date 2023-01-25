@@ -36,7 +36,7 @@ const Home = () => {
             <div className="card">
                <div className="card-body p-5">
                   <h5 className="card-title">Explore App Features</h5>
-                  <p className="card-text">.</p>
+                  <p className="card-text">Something More About this App Let's Go...</p>
                   <a href={ROUTES.CONVERTER} className="btn btn-primary">Go to Converter</a>
                </div>
             </div>
