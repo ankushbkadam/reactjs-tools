@@ -1,10 +1,10 @@
 
 const Converter = () => {
     return (
-        <div className="container-fluid gradient_bg container-box ">
+        <div className="container-fluid gradient_bg container-box">
             <h2 className="gradient-text pt-5">Let's Convert Color</h2>
-            <div className="container converter-box ">
-                <div className="wrapper ">
+            <div className="container converter-box">
+                <div className="wrapper">
                     <label>RGB</label>
                     <input type='text' placeholder="Enter RGB Value" />
                 </div>
@@ -18,4 +18,4 @@ const Converter = () => {
 
     )
 }
-export default Converter
+export default Converter;
