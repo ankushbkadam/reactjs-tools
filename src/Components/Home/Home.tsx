@@ -6,7 +6,7 @@ const Home = () => {
           <Carousel/>
          <section className="container card-section mt-5">
             <h2>Our App Menu</h2>
-            <div className="card">
+            <div className="card card-bg">
                <div className="card-body p-5">
                   <h5 className="card-title">Explore App Features</h5>
                   <p className="card-text">Something More About this App Let's Go...</p>
