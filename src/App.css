@@ -35,7 +35,7 @@
 
 /* Header-slider */
 
-.carousel-item img {
+.carousel-contain img {
   width: 100%;
   height: 80vh;
 }

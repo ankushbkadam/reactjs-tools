@@ -10,14 +10,14 @@ const Carousel = () => {
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
+                        <div className="carousel-item carousel-contain active">
                             <img src="./Images/p1.jpg" className="d-block" alt="pic-1" img-fluid />
                         </div>
-                        <div className="carousel-item">
+                        <div className="carousel-item carousel-contain">
                             <img src="./Images/p2.jpg" className="d-block" alt="pic-2" img-fluid />
                         </div>
-                        <div className="carousel-item">
-                            <img src="/Images/p3.png" className="d-block" alt="pic-3" img-fluid />
+                        <div className="carousel-item carousel-contain">
+                            <img src="/Images/p3.jpg" className="d-block" alt="pic-3" img-fluid />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
