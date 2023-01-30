@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router';
 import Navbar from './Components/Navbar/Navbar';
 import { ROUTES } from './Constants/routeConstants';
 import About from './Components/About';
-import Converter from './Components/Converter/Converter';
+import Converter from './Components/Rgb-to-Hex/Rgb-to-Hex';
 
 function App() {
   return (
