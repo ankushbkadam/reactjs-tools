@@ -12,7 +12,6 @@ const Converter = () => {
                     <label>HEX</label>
                     <input type='text' placeholder="Enter HEX Value" />
                 </div>
-                {/* <div className="color-box">box</div> */}
             </form>
         </div>
 

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 /* Root */
 :root {
   --gradient-text: linear-gradient(80.97deg, #AE67FA 1.84%, #F49867 102.67%);
@@ -58,15 +59,14 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  width: 80vmin;
+  width: 90vmin;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   border: 1px solid grey;
-  padding: 30px;
-  padding-bottom: 150px;
+  padding: 110px;
   border-radius: 5px;
 }
 
@@ -86,13 +86,4 @@
   border-radius: 15px;
   text-align: center;
   background-color: antiquewhite;
-}
-
-.color-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  justify-content: center;
-  border: 1px solid grey;
 }
