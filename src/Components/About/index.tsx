@@ -18,7 +18,7 @@ useEffect(() => {
     };
     }, []);
 
-    return <>
+    return <div className='bg-dark text-white'>
         <h1>About Us</h1>
         <div className='container'>
             <p>
@@ -45,7 +45,7 @@ useEffect(() => {
                 </div>
             </div>
         </div>
-    </>;
+    </div>;
 }
 
 export default About;

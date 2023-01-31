@@ -59,3 +59,6 @@ feature/
 bug/
 enhancement/
 
+---------------------------------
+Use npm for package manager
+---------------------------------
