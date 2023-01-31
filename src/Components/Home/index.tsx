@@ -1,10 +1,10 @@
 import { ROUTES } from "../../Constants/routeConstants";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel";
 const Home = () => {
    return (
       <div>
           <Carousel/>
-         <section className="container card-section mt-5">
+         <section className="container card-section pt-5">
             <h2>Our App Menu</h2>
             <div className="card bg-info rounded">
                <div className="card-body p-5">
