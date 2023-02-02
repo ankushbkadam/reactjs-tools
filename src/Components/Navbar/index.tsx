@@ -2,12 +2,13 @@ import React from "react";
 import { Route, Routes } from 'react-router';
 import { Link, NavLink } from 'react-router-dom'
 import { ROUTES } from "../../Constants/routeConstants";
+import { IMGLINK } from "../../Constants/imagelinkConstant";
 const Navbar = () => {
       
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <div className="container-fluid">
-                <Link className="navbar-brand" to={ROUTES.HOME}>Navbar</Link>
+                <img src={IMGLINK.logo1} className="navbar-brand" style={{width:"50px"}} />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
