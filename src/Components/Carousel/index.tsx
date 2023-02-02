@@ -1,7 +1,8 @@
+import { IMGLINK } from "../../Constants/imagelinkConstant";
 
 const Carousel = () => {
     return (
-            <div className="container-fluid p-0">
+        <div className="container-fluid p-0">
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -10,13 +11,13 @@ const Carousel = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item carousel-contain active">
-                        <img src="./Images/p1.jpg" className="d-block" alt="pic-1" img-fluid />
+                        <img src={IMGLINK.pic1} className="d-block w-100" style={{height:'70vh'}} alt="pic-1" img-fluid />
                     </div>
                     <div className="carousel-item carousel-contain">
-                        <img src="./Images/p2.jpg" className="d-block" alt="pic-2" img-fluid />
+                        <img src={IMGLINK.pic2} className="d-block w-100" style={{height:'70vh'}} alt="pic-2" img-fluid />
                     </div>
                     <div className="carousel-item carousel-contain">
-                        <img src="/Images/p3.jpg" className="d-block" alt="pic-3" img-fluid />
+                        <img src={IMGLINK.pic3} className="d-block w-100" style={{height:'70vh'}} alt="pic-3" img-fluid />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -29,6 +30,6 @@ const Carousel = () => {
                 </button>
             </div>
         </div>
-        )
+    )
 }
 export default Carousel;

@@ -4,13 +4,14 @@ import Home from './Components/Home';
 import { Route, Routes } from 'react-router';
 import Navbar from './Components/Navbar';
 import { ROUTES } from './Constants/routeConstants';
+import { IMGLINK } from './Constants/imagelinkConstant';
 import About from './Components/About'
 import Footer from './Components/Footer';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-flex flex-column min-vh-100">
       <Navbar />
       <div>
         <Routes>
@@ -18,7 +19,7 @@ function App() {
           <Route path={ROUTES.ABOUT} element={<About />}/>
         </Routes>
       </div>
-      <Footer />
+       <Footer /> 
     </div>
   );
 }

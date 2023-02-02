@@ -1,14 +1,11 @@
 .App {
   text-align: center;
-
 }
-
 /* Root */
 :root {
   --gradient-text: linear-gradient(80.97deg, #AE67FA 1.84%, #F49867 102.67%);
   --gradient-text: linear-gradient(80.97deg, #AE67FA -13.86%, #F49867 99.55%);
 }
-
 .gradient_bg {
 
   /* ff 3.6+ */
@@ -26,20 +23,11 @@
   /* global 92%+ browsers support */
   background: radial-gradient(circle at 3% 25%, rgba(0, 41, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }
-
 .gradient-text {
   background: var(--gradient-text);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-/*Card-section */
-
-/* Header-slider */
-
-.carousel-contain img {
-  width: 100%;
-  height: 80vh;
 }
 
 /* Converter-Section */
