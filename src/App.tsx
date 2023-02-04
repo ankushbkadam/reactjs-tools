@@ -7,7 +7,7 @@ import { ROUTES } from './Constants/routeConstants';
 import { IMGLINK } from './Constants/imagelinkConstant';
 import About from './Components/About'
 import Footer from './Components/Footer';
-
+import PercentageCalculator from './Components/PercentageCalculator';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.ABOUT} element={<About />}/>
+          <Route path={ROUTES.PERCENTAGE_CALCULATOR} element={<PercentageCalculator />} />
         </Routes>
       </div>
        <Footer /> 

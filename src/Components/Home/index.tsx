@@ -13,6 +13,13 @@ const Home = () => {
                   <a href={ROUTES.CONVERTER} className="btn btn-primary">Go to App</a>
                </div>
             </div>
+            <div className="card w-50 bg-info rounded mx-auto">
+               <div className="card-body" >
+                  <h5 className="card-title">Percentage Calculator</h5>
+                  <p className="card-text">Calculate and explore percentage in easy and a efficient way!</p>
+                  <a href={ROUTES.PERCENTAGE_CALCULATOR} className="btn btn-primary">Open</a>
+               </div>
+            </div>
          </section>
       </div>
    )
