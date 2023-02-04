@@ -1,4 +1,4 @@
-import { IMGLINK } from "../../Constants/imagelinkConstant";
+import { IMG_LINK } from "../../Constants/globalLinks";
 
 const Carousel = () => {
     return (
@@ -11,13 +11,13 @@ const Carousel = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item carousel-contain active">
-                        <img src={IMGLINK.pic1} className="d-block w-100" style={{height:'70vh'}} alt="pic-1" img-fluid />
+                        <img src={IMG_LINK.SLIDE_1} className="d-block w-100" style={{height:'70vh'}} alt="slide_1" img-fluid="true" />
                     </div>
                     <div className="carousel-item carousel-contain">
-                        <img src={IMGLINK.pic2} className="d-block w-100" style={{height:'70vh'}} alt="pic-2" img-fluid />
+                        <img src={IMG_LINK.SLIDE_2} className="d-block w-100" style={{height:'70vh'}} alt="slide_2" img-fluid="true" />
                     </div>
                     <div className="carousel-item carousel-contain">
-                        <img src={IMGLINK.pic3} className="d-block w-100" style={{height:'70vh'}} alt="pic-3" img-fluid />
+                        <img src={IMG_LINK.SLIDE_3} className="d-block w-100" style={{height:'70vh'}} alt="slide_3" img-fluid="true" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

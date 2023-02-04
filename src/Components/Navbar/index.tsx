@@ -1,14 +1,13 @@
 import React from "react";
-import { Route, Routes } from 'react-router';
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ROUTES } from "../../Constants/routeConstants";
-import { IMGLINK } from "../../Constants/imagelinkConstant";
+import { IMG_LINK } from "../../Constants/globalLinks";
+
 const Navbar = () => {
-      
-    return (
+      return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <div className="container-fluid">
-                <img src={IMGLINK.logo1} className="navbar-brand" style={{width:"50px"}} />
+             <Link to={ROUTES.HOME}><img src={IMG_LINK.LOGO_1} className="navbar-brand nav-logo" alt="logo"/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +22,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </nav>
-  )
+         </nav>
+        )
 }
 export default Navbar;
