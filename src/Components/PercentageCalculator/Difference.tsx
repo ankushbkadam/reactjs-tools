@@ -7,27 +7,31 @@ import { modDiff } from './helper';
     v2: value2
     modSub: |v1-v2|
     temp: (v1+v2)/2
-    Answer: (modSub/temp)*100
+    Percentage Difference: (modSub/temp)*100
 
  */
 const Difference = () => {
     const [perA, setPerA] = useState<number>(0);
     const [perB, setPerB] = useState<number>(0);
     const [perDiff, setPerDiff] = useState<number>(0);
+    const [subDiff, setSubDiff] = useState<number>(0);
 
     useEffect(() => {
         if(!perA || !perB || perA < 0 || perB < 0) {
             setPerDiff(0);
             return;
         }
-        const diff = (modDiff(perA,perB)/((perA+perB)/2))*100;
+        const modDiffValue = modDiff(perA,perB);
+        const diff = (modDiffValue/((perA+perB)/2))*100;
         setPerDiff(diff);
+        setSubDiff(modDiffValue);
     }, [perA, perB]);
 
     const handleClear = () => {
         setPerA(0);
         setPerB(0);
         setPerDiff(0);
+        setSubDiff(0);
     }
     
     return <>
@@ -38,6 +42,7 @@ const Difference = () => {
         <input value={perA} onChange={(e) => setPerA(parseFloat(e.target.value || '0'))} />        
         <input value={perB} onChange={(e) => setPerB(parseFloat(e.target.value || '0'))} />
         <div>Difference in percentages: <b>{perDiff}%</b></div>
+        <div>Difference in value: <b> ₹ {subDiff.toLocaleString('en-IN')}</b></div>
     </>
 }
 
