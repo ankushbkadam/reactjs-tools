@@ -7,7 +7,7 @@ const Navbar = () => {
       return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <div className="container-fluid">
-             <Link to={ROUTES.HOME}><img src={IMG_LINK.LOGO_1} className="navbar-brand nav-logo" alt="logo"/></Link>
+             <Link to={ROUTES.HOME}><img src={IMG_LINK.RGB_BRAND_LOGO} className="navbar-brand nav-logo" alt="logo"/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

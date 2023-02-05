@@ -4,7 +4,6 @@ import Home from './Components/Home';
 import { Route, Routes } from 'react-router';
 import Navbar from './Components/Navbar';
 import { ROUTES } from './Constants/routeConstants';
-import { IMG_LINK } from './Constants/globalLinks';
 import About from './Components/About';
 import Footer from './Components/Footer';
 
