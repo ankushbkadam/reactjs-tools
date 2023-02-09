@@ -13,16 +13,22 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link className="nav-link active" aria-current='page' to={ROUTES.HOME} >Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to={ROUTES.ABOUT}>About</Link>
-                        </li>
+                       <Listitem className='nav-item d-flex'> 
+                       <Link className="nav-link active" aria-current='page' to={ROUTES.HOME} >Home</Link>
+                       <Link className="nav-link" to={ROUTES.ABOUT}>About</Link>
+                      </Listitem>
                     </ul>
                 </div>
             </div>
          </nav>
         )
 }
+ const Listitem = (props:any) =>{
+    
+      return(
+        <>
+         <li className={props.className}>{props.children}</li>
+        </>
+      )
+ }
 export default Navbar;
